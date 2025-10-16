@@ -11,4 +11,5 @@
  - [GIT (manejador de versiones)](https://git-scm.com/)
  - [POSTMAN](https://www.postman.com/downloads/)
 
-
+## Playground sin instalaciones para practicar
+ - [SQL PLAYGROUND](https://runsql.com/r)
