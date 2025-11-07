@@ -49,7 +49,6 @@
 | Parámetro             | Valor            |
 | --------------------- | ---------------- |
 | **Puerto**            | 5432             |
-| **Nombre de la base** | PostgreSQL       |
 | **Usuario**           | postgres         |
 | **Contraseña**        | *(sin password)* |
 
@@ -60,3 +59,4 @@
 | **Puerto**     | 3306             |
 | **Usuario**    | root             |
 | **Contraseña** | *(sin password)* |
+
