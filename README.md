@@ -43,3 +43,20 @@
 | `UNIQUE`      | No permite valores duplicados | `email UNIQUE`                               |
 | `CHECK`       | Valida condiciones            | `CHECK (price > 0)`                          |
 | `FOREIGN KEY` | Vincula tablas                | `FOREIGN KEY (user_id) REFERENCES users(id)` |
+
+## POSTGRESQL
+
+| Parámetro             | Valor            |
+| --------------------- | ---------------- |
+| **Puerto**            | 5432             |
+| **Nombre de la base** | PostgreSQL       |
+| **Usuario**           | postgres         |
+| **Contraseña**        | *(sin password)* |
+
+## MYSQL
+
+| Parámetro      | Valor            |
+| -------------- | ---------------- |
+| **Puerto**     | 3306             |
+| **Usuario**    | root             |
+| **Contraseña** | *(sin password)* |
