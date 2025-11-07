@@ -13,3 +13,10 @@
 
 ## Playground sin instalaciones para practicar
  - [SQL PLAYGROUND](https://runsql.com/r)
+
+| Tipo    | Nombre completo            | Qué hace                                          | Ejemplo típico                  |
+| ------- | -------------------------- | ------------------------------------------------- | ------------------------------- |
+| **DDL** | Data Definition Language   | Define estructura (tablas, columnas, constraints) | `CREATE TABLE`, `ALTER`, `DROP` |
+| **DML** | Data Manipulation Language | Manipula datos (insertar, modificar, borrar)      | `INSERT`, `UPDATE`, `DELETE`    |
+| **DQL** | Data Query Language        | Consulta datos                                    | `SELECT`                        |
+| **DCL** | Data Control Language      | Gestiona permisos y accesos                       | `GRANT`, `REVOKE`               |
