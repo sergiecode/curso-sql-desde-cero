@@ -56,6 +56,24 @@
 | **ZEROFILL**                     | Rellena con ceros a la izquierda los números enteros. (poco usado hoy)                                                                                     | `code INT(5) ZEROFILL`                                              |
 
 
+## ALTER TABLE
+
+| Operación           | Descripción                                                              | Ejemplo                                                                                 |
+| ------------------- | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| **ADD COLUMN**      | Agrega una nueva columna.                                                | `ALTER TABLE users ADD COLUMN age INT;`                                                 |
+| **DROP COLUMN**     | Elimina una columna existente.                                           | `ALTER TABLE users DROP COLUMN age;`                                                    |
+| **RENAME COLUMN**   | Cambia el nombre de una columna.                                         | `ALTER TABLE users RENAME COLUMN name TO full_name;`                                    |
+| **MODIFY COLUMN**   | Cambia el tipo o las propiedades de una columna (sin cambiar el nombre). | `ALTER TABLE users MODIFY COLUMN full_name VARCHAR(150) NOT NULL;`                      |
+| **ADD CONSTRAINT**  | Crea una nueva constraint (clave foránea, única, etc.).                  | `ALTER TABLE orders ADD CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id);` |
+| **DROP CONSTRAINT** | Elimina una constraint existente (MySQL 8+).                             | `ALTER TABLE orders DROP CONSTRAINT fk_user;`                                           |
+| **RENAME TO**       | Cambia el nombre de la tabla.                                            | `ALTER TABLE users RENAME TO customers;`                                                |
+| **ADD INDEX**       | Agrega un índice para optimizar consultas.                               | `ALTER TABLE users ADD INDEX idx_email (email);`                                        |
+| **DROP INDEX**      | Elimina un índice existente.                                             | `ALTER TABLE users DROP INDEX idx_email;`                                               |
+| **ADD CHECK**       | Agrega una validación lógica sobre los datos.                            | `ALTER TABLE products ADD CONSTRAINT chk_price CHECK (price > 0);`                      |
+| **DROP CHECK**      | Quita una validación `CHECK`.                                            | `ALTER TABLE products DROP CHECK chk_price;`                                            |
+
+
+
 ## POSTGRESQL
 
 | Parámetro             | Valor            |
@@ -71,5 +89,6 @@
 | **Puerto**     | 3306             |
 | **Usuario**    | root             |
 | **Contraseña** | *(sin password)* |
+
 
 
